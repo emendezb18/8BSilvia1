@@ -1,0 +1,75 @@
+/*Navegador 1*/
+body {
+  margin: 10;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: bisque;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  padding: 50px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline; /* Hace que los ítems del menú estén en una línea horizontal */
+  margin-right: 20px; /* Espacio entre los ítems del menú */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/*Tarjetas*/
+.galeria {
+    height: calc( var(--h) + 3em);
+    width: var(--w);
+    margin:1em auto;
+    border: 1px solid #555;
+    position: relative;  
+  }
+  
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-1 * var(--h) - 1.5em);
+    left: .5em;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
+  }
